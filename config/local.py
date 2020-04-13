@@ -1,7 +1,17 @@
 from datetime import timedelta
 
 DEBUG = True
-SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/flask_example'
+
+# SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/flask_example'
+
+SQLALCHEMY_DATABASE_URI = 'postgresql://%s:%s@%s:%s/%s' % (
+		    'postgres',
+		    'root',
+		    'localhost',
+		    '5432',
+		    'flask_example'
+		)
+
 # SQLALCHEMY_ECHO = True
 CELERY_BROKER_URL = 'sqla+postgresql://localhost/flask_example'
 CELERY_TASK_SERIALIZER = 'json'
