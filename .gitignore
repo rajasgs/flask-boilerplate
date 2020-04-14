@@ -11,3 +11,6 @@ __pycache__/
 
 # celery
 celerybeat*
+
+
+py3/

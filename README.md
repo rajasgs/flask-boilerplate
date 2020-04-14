@@ -40,6 +40,20 @@ In order to run unit tests in py.test invoke:
 
 `./manage.py test`
 
+## Sample Data
+
+select * from "document";
+
+insert into document (data) values ('{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+    }
+}');
+
 
 ## Contribution
 
